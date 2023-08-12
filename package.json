@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "gitHooks": "lint-staged"
+    "gitHooks": "lint-staged",
+    "commit-msg": "node scripts/verifyCommitMsg.js"
   },
   "keywords": [],
   "author": "",
