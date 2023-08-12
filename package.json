@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
-    "gitHooks": "lint-staged",
-    "commit-msg": "node scripts/verifyCommitMsg.js"
+    "prepare": "husky install"
+  },
+  "husky":{
+    "gitHooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "node scripts/verifyCommitMsg.js"
+    }
   },
   "keywords": [],
   "author": "",
